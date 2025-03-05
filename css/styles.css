@@ -4,7 +4,11 @@
 html {
     scroll-behavior: smooth;
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
 body{
     background-color: #2E2C31;
     color: #FCFFFC;
@@ -81,7 +85,10 @@ header nav ul li:hover{
     padding: 10px;
     margin: 0;
 }
-
+.presentacion .texto {
+    width: 40%;
+    height: auto;
+}
 .presentacion .texto h1{
     font-size: 4em;
     color: #20E7FC;
@@ -90,6 +97,12 @@ header nav ul li:hover{
     padding: 10px;
     margin: 0;
 }
+
+.presentacion .imagen img {
+    width: 80%;
+    height: auto;
+}
+
 main h2{
     font-size: 3em;
     color: #20E7FC;
@@ -377,14 +390,25 @@ footer{
 
     header nav ul {
         flex-direction: column;
-        
     }
-
+    
     .presentacion {
+        width: 95%;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: auto;
     }
-
+    .presentacion .imagen{
+        margin: 0;
+        padding: 0;
+        width: 80%;
+    }
+    .presentacion .imagen img {
+        width: 100%;
+        align-self: center;
+        height: auto;
+    }
     .presentacion .texto h1 {
         font-size: 2em;
     }
