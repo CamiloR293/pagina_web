@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, {
         root: null, // Observa toda la página
         rootMargin: "0px",
-        threshold: 0.7 // Se activa cuando el 20% del elemento es visible
+        threshold: 0.3 // Se activa cuando el 20% del elemento es visible
     });
 
     const fadeElements = document.querySelectorAll('.fade-in');

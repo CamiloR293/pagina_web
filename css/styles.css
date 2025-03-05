@@ -12,6 +12,7 @@ body{
 }
 header{
     box-shadow: 0 0px 10px 1px #20E7FC;
+    width: 100%;
 }
 
 header nav{
@@ -227,7 +228,6 @@ main h2{
     height: auto;
     background-color: #403d44;
     width: 100%;
-    overflow: hidden;
 }
 
 .equipo .miembros .fila1 div img{
@@ -338,3 +338,88 @@ footer{
     opacity: 1;
     transform: translateY(0);
 }
+
+@media (max-width: 1488px) {
+    
+    body {
+        font-size: 1em;
+        overflow-x: hidden;
+    }
+
+    header{
+        width: 100%;
+        box-shadow: none;
+    }
+    header nav ul {
+        flex-direction: row;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .presentacion .texto h1 {
+        font-size: 3em;
+    }
+
+    .presentacion .imagen img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre-nosotros div {
+        flex-direction: column;
+    }
+
+    .equipo .miembros .fila1, .equipo .miembros .fila2 {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .equipo .miembros .fila1 div, .equipo .miembros .fila2 div {
+        width: 100%;
+    }
+}
+
+/* Media query para dispositivos Android */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        
+    }
+
+    .presentacion {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .presentacion .texto h1 {
+        font-size: 2em;
+    }
+
+    .sobre-nosotros div {
+        flex-direction: column;
+    }
+
+    .equipo .miembros .fila1, .equipo .miembros .fila2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .equipo .miembros .fila1 div, .equipo .miembros .fila2 div {
+        width: 100%;
+    }
+
+    .equipo .miembros .fila1 div img, .equipo .miembros .fila2 div img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
