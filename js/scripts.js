@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const mediaQuery = window.matchMedia('(max-width: 1488px)');
+    const thresholdValue = mediaQuery.matches ? 0 : 0.3;
+
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -9,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, {
         root: null, // Observa toda la página
         rootMargin: "0px",
-        threshold: 0.3 // Se activa cuando el 20% del elemento es visible
+        threshold: thresholdValue // Cambia el valor del umbral según la resolución
     });
 
     const fadeElements = document.querySelectorAll('.fade-in');
