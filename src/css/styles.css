@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #2E2C31;
+    color: #FCFFFC;
+    margin: 0;
+}
+header{
+    box-shadow: 0 0px 10px 1px #20E7FC;
+}
+
+header nav{
+    align-items: center;
+    font-size: 1.3em;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}   
+
+header nav ul li a{
+    width: 100%;
+    text-decoration: none;
+    color: #FCFFFC;
+}
+
+h1, h2, h3{
+    font-family: 'Marcellus', serif;
+    color: #FCFFFC;
+    padding: 20px;
+    margin: 0;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li{
+    display: inline;
+    text-align: center;
+    margin: 0 ;
+    width: 100%;
+    padding: 30px;
+    transition: 0.2s;
+}
+
+
+
+header nav ul li:hover{
+    background-color: #20E7FC;
+    transition: 0.2s;
+}
+
+/* Presentacion despues del header */
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 0;
+    height: 100vh;
+}
+
+.presentacion .texto p{
+    font-size: 1.5em;
+    color: #FCFFFC;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.presentacion .texto h1{
+    font-size: 4em;
+    color: #20E7FC;
+    font-family: 'Marcellus', serif;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+main h2{
+    font-size: 3em;
+    color: #20E7FC;
+    font-family: 'Marcellus', serif;
+    padding: 10px;
+    margin: 0;
+}
+/* Sobre nosotros */
+.sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    height: auto;
+    font-family: 'League Spartan', sans-serif;
+    word-wrap: break-word;
+}
+
+.sobre-nosotros p{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.sobre-nosotros div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: left;
+    padding: 50px;
+    border-bottom: 2px solid #65606b;
+    width: 90%;
+    
+}
+
+.sobre-nosotros div h2{
+    padding: 50px;
+}
+.sobre-nosotros div p{
+    font-size: 1.5em;
+    text-align: left;
+    padding: 50px;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+/* Nuestros servicios */
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    height: auto;
+    font-family: 'League Spartan', sans-serif;
+    word-wrap: break-word;
+}
+
+.servicios p{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Nuestro equipo */
+.equipo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    height: auto;
+    font-family: 'League Spartan', sans-serif;
+    word-wrap: break-word;
+}
+
+.equipo p{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.equipo .titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    font-family: 'League Spartan', sans-serif;
+    word-wrap: break-word;
+}
+
+.equipo .miembros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    margin: 0;
+    height: auto;
+    font-family: 'League Spartan', sans-serif;
+    word-wrap: break-word;
+    gap: 20px;
+}
+
+.equipo .miembros .fila1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    height: auto;
+    width: 90%;
+    gap: 20px;
+}
+
+.equipo .miembros .fila1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    height: auto;
+    background-color: #403d44;
+    width: 100%;
+    overflow: hidden;
+}
+
+.equipo .miembros .fila1 div img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.equipo .miembros .fila2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    height: auto;
+    width: 60%;
+    gap: 20px;
+}
+
+.equipo .miembros .fila2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    height: auto;
+    background-color: #403d44;
+    width: 100%;
+}
+
+.equipo .miembros .fila2 div img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.equipo button{
+    padding: 20px;
+    margin: 10px;
+    background-color: #20E7FC;
+    color: #FCFFFC;
+    border: none;
+    border-radius: 5px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.equipo button:hover{
+    background-color: #fcfcfc;
+    color: #20E7FC;
+    transition: 0.2s;
+}
+
+.equipo button:active{
+    background-color: #fcfcfc;
+    color: #20E7FC;
+    transition: 0.2s;
+}
+
+/* Objetivos */
+.objetivos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    height: auto;
+    font-family: 'League Spartan', sans-serif;
+    word-wrap: break-word;
+}
+
+.objetivos li{
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+    height: auto;
+    font-family: 'League Spartan', sans-serif;
+    word-wrap: break-word;
+    background-color: #403d44;
+    font-size: 1em;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show{
+    opacity: 1;
+    transform: translateY(0);
+}
